@@ -1,0 +1,314 @@
+[debug] [2024-05-13T15:43:24.503Z] ----------------------------------------------------------------------
+[debug] [2024-05-13T15:43:24.513Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-13T15:43:24.514Z] CLI Version:   13.8.3
+[debug] [2024-05-13T15:43:24.515Z] Platform:      win32
+[debug] [2024-05-13T15:43:24.515Z] Node Version:  v20.11.1
+[debug] [2024-05-13T15:43:24.516Z] Time:          Mon May 13 2024 18:43:24 GMT+0300 (Москва, стандартное время)
+[debug] [2024-05-13T15:43:24.517Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-13T15:43:24.758Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-13T15:43:24.758Z] > authorizing via signed-in user (nero53277@gmail.com)
+[debug] [2024-05-13T15:43:24.758Z] [iam] checking project auth-firebase-9da15 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-13T15:43:24.761Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions [none]
+[debug] [2024-05-13T15:43:24.761Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions x-goog-quota-user=projects/auth-firebase-9da15
+[debug] [2024-05-13T15:43:24.761Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-13T15:43:25.786Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions 200
+[debug] [2024-05-13T15:43:25.787Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-13T15:43:25.788Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15 [none]
+[debug] [2024-05-13T15:43:26.174Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15 200
+[debug] [2024-05-13T15:43:26.175Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15 {"projectId":"auth-firebase-9da15","projectNumber":"121909405412","displayName":"auth-firebase","name":"projects/auth-firebase-9da15","resources":{"hostingSite":"auth-firebase-9da15","realtimeDatabaseInstance":"auth-firebase-9da15-default-rtdb"},"state":"ACTIVE","etag":"1_d6fa2607-07ea-49fa-89e7-b1c653fc5b5e"}
+[debug] [2024-05-13T15:43:31.646Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites pageToken=&pageSize=10
+[debug] [2024-05-13T15:43:32.926Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites 200
+[debug] [2024-05-13T15:43:32.926Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites {"sites":[{"name":"projects/auth-firebase-9da15/sites/auth-firebase-9da15","defaultUrl":"https://auth-firebase-9da15.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-13T15:43:32.929Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites 
+[debug] [2024-05-13T15:43:33.233Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites 200
+[debug] [2024-05-13T15:43:33.234Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites {"sites":[{"name":"projects/auth-firebase-9da15/sites/auth-firebase-9da15","defaultUrl":"https://auth-firebase-9da15.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-13T15:43:33.235Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15/webApps/-/config [none]
+[debug] [2024-05-13T15:43:34.005Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15/webApps/-/config 200
+[debug] [2024-05-13T15:43:34.005Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15/webApps/-/config {"projectId":"auth-firebase-9da15","appId":"1:121909405412:web:d068890550cd9975196ef1","databaseURL":"https://auth-firebase-9da15-default-rtdb.firebaseio.com","storageBucket":"auth-firebase-9da15.appspot.com","apiKey":"AIzaSyCu2co0zoBv7_wWEuUzQ52T1ItJK5DpBiE","authDomain":"auth-firebase-9da15.firebaseapp.com","messagingSenderId":"121909405412"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-05-13T15:43:47.124Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites/auth-firebase-9da15 [none]
+[debug] [2024-05-13T15:43:48.187Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites/auth-firebase-9da15 200
+[debug] [2024-05-13T15:43:48.188Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites/auth-firebase-9da15 {"name":"projects/auth-firebase-9da15/sites/auth-firebase-9da15","defaultUrl":"https://auth-firebase-9da15.web.app","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.2
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] uncaughtException [Error: EPERM: operation not permitted, open 'D:\IT\FRONT END\NEXT\auth-firebase REPO\auth-firebase\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'D:\\IT\\FRONT END\\NEXT\\auth-firebase REPO\\auth-firebase\\.next\\trace'
+}
+
+[debug] [2024-05-13T15:44:02.780Z] Error: ENOENT: no such file or directory, open 'D:\IT\FRONT END\NEXT\auth-firebase REPO\auth-firebase\.next\server\middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-05-13T15:48:29.578Z] ----------------------------------------------------------------------
+[debug] [2024-05-13T15:48:29.584Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-13T15:48:29.584Z] CLI Version:   13.8.3
+[debug] [2024-05-13T15:48:29.585Z] Platform:      win32
+[debug] [2024-05-13T15:48:29.585Z] Node Version:  v20.11.1
+[debug] [2024-05-13T15:48:29.585Z] Time:          Mon May 13 2024 18:48:29 GMT+0300 (Москва, стандартное время)
+[debug] [2024-05-13T15:48:29.586Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-13T15:48:29.702Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-13T15:48:29.702Z] > authorizing via signed-in user (nero53277@gmail.com)
+[debug] [2024-05-13T15:48:29.702Z] [iam] checking project auth-firebase-9da15 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-13T15:48:29.706Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions [none]
+[debug] [2024-05-13T15:48:29.706Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions x-goog-quota-user=projects/auth-firebase-9da15
+[debug] [2024-05-13T15:48:29.706Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-13T15:48:30.207Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions 200
+[debug] [2024-05-13T15:48:30.208Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-13T15:48:30.210Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15 [none]
+[debug] [2024-05-13T15:48:30.594Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15 200
+[debug] [2024-05-13T15:48:30.595Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15 {"projectId":"auth-firebase-9da15","projectNumber":"121909405412","displayName":"auth-firebase","name":"projects/auth-firebase-9da15","resources":{"hostingSite":"auth-firebase-9da15","realtimeDatabaseInstance":"auth-firebase-9da15-default-rtdb"},"state":"ACTIVE","etag":"1_d6fa2607-07ea-49fa-89e7-b1c653fc5b5e"}
+[debug] [2024-05-13T15:48:36.903Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites pageToken=&pageSize=10
+[debug] [2024-05-13T15:48:38.474Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites 200
+[debug] [2024-05-13T15:48:38.474Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites {"sites":[{"name":"projects/auth-firebase-9da15/sites/auth-firebase-9da15","defaultUrl":"https://auth-firebase-9da15.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-13T15:48:38.476Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites 
+[debug] [2024-05-13T15:48:39.115Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites 200
+[debug] [2024-05-13T15:48:39.116Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites {"sites":[{"name":"projects/auth-firebase-9da15/sites/auth-firebase-9da15","defaultUrl":"https://auth-firebase-9da15.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-13T15:48:39.117Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15/webApps/-/config [none]
+[debug] [2024-05-13T15:48:39.913Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15/webApps/-/config 200
+[debug] [2024-05-13T15:48:39.913Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15/webApps/-/config {"projectId":"auth-firebase-9da15","appId":"1:121909405412:web:d068890550cd9975196ef1","databaseURL":"https://auth-firebase-9da15-default-rtdb.firebaseio.com","storageBucket":"auth-firebase-9da15.appspot.com","apiKey":"AIzaSyCu2co0zoBv7_wWEuUzQ52T1ItJK5DpBiE","authDomain":"auth-firebase-9da15.firebaseapp.com","messagingSenderId":"121909405412"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-05-13T15:48:54.869Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites/auth-firebase-9da15 [none]
+[debug] [2024-05-13T15:48:56.092Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites/auth-firebase-9da15 200
+[debug] [2024-05-13T15:48:56.093Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites/auth-firebase-9da15 {"name":"projects/auth-firebase-9da15/sites/auth-firebase-9da15","defaultUrl":"https://auth-firebase-9da15.web.app","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.2
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/6) ...
+
+[info]    Generating static pages (1/6) 
+
+[info]    Generating static pages (2/6) 
+
+[info]    Generating static pages (4/6) 
+
+[info]  ✓ Generating static pages (6/6)
+
+[info] 
+
+[info] > Build error occurred
+
+[info] [Error: EBUSY: resource busy or locked, rmdir 'D:\IT\FRONT END\NEXT\auth-firebase REPO\auth-firebase\.next\export'] {
+  errno: -4082,
+  code: 'EBUSY',
+  syscall: 'rmdir',
+  path: 'D:\\IT\\FRONT END\\NEXT\\auth-firebase REPO\\auth-firebase\\.next\\export'
+}
+
+[debug] [2024-05-13T15:56:39.057Z] Error: ENOENT: no such file or directory, open 'D:\IT\FRONT END\NEXT\auth-firebase REPO\auth-firebase\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-05-13T15:58:28.278Z] ----------------------------------------------------------------------
+[debug] [2024-05-13T15:58:28.282Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-13T15:58:28.283Z] CLI Version:   13.8.3
+[debug] [2024-05-13T15:58:28.283Z] Platform:      win32
+[debug] [2024-05-13T15:58:28.283Z] Node Version:  v20.11.1
+[debug] [2024-05-13T15:58:28.284Z] Time:          Mon May 13 2024 18:58:28 GMT+0300 (Москва, стандартное время)
+[debug] [2024-05-13T15:58:28.284Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-13T15:58:28.378Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-13T15:58:28.379Z] > authorizing via signed-in user (nero53277@gmail.com)
+[debug] [2024-05-13T15:58:28.379Z] [iam] checking project auth-firebase-9da15 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-13T15:58:28.382Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions [none]
+[debug] [2024-05-13T15:58:28.382Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions x-goog-quota-user=projects/auth-firebase-9da15
+[debug] [2024-05-13T15:58:28.382Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-13T15:58:29.316Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions 200
+[debug] [2024-05-13T15:58:29.316Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-13T15:58:29.317Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15 [none]
+[debug] [2024-05-13T15:58:29.720Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15 200
+[debug] [2024-05-13T15:58:29.721Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15 {"projectId":"auth-firebase-9da15","projectNumber":"121909405412","displayName":"auth-firebase","name":"projects/auth-firebase-9da15","resources":{"hostingSite":"auth-firebase-9da15","realtimeDatabaseInstance":"auth-firebase-9da15-default-rtdb"},"state":"ACTIVE","etag":"1_d6fa2607-07ea-49fa-89e7-b1c653fc5b5e"}
+[debug] [2024-05-13T15:58:34.477Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites pageToken=&pageSize=10
+[debug] [2024-05-13T15:58:35.964Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites 200
+[debug] [2024-05-13T15:58:35.964Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites {"sites":[{"name":"projects/auth-firebase-9da15/sites/auth-firebase-9da15","defaultUrl":"https://auth-firebase-9da15.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-13T15:58:35.966Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites 
+[debug] [2024-05-13T15:58:36.676Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites 200
+[debug] [2024-05-13T15:58:36.677Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites {"sites":[{"name":"projects/auth-firebase-9da15/sites/auth-firebase-9da15","defaultUrl":"https://auth-firebase-9da15.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-13T15:58:36.677Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15/webApps/-/config [none]
+[debug] [2024-05-13T15:58:37.908Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15/webApps/-/config 200
+[debug] [2024-05-13T15:58:37.909Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15/webApps/-/config {"projectId":"auth-firebase-9da15","appId":"1:121909405412:web:d068890550cd9975196ef1","databaseURL":"https://auth-firebase-9da15-default-rtdb.firebaseio.com","storageBucket":"auth-firebase-9da15.appspot.com","apiKey":"AIzaSyCu2co0zoBv7_wWEuUzQ52T1ItJK5DpBiE","authDomain":"auth-firebase-9da15.firebaseapp.com","messagingSenderId":"121909405412"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-05-13T15:58:48.877Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites/auth-firebase-9da15 [none]
+[debug] [2024-05-13T15:58:49.998Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites/auth-firebase-9da15 200
+[debug] [2024-05-13T15:58:49.999Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites/auth-firebase-9da15 {"name":"projects/auth-firebase-9da15/sites/auth-firebase-9da15","defaultUrl":"https://auth-firebase-9da15.web.app","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.2
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/6) ...
+
+[info]    Generating static pages (1/6) 
+
+[info]    Generating static pages (2/6) 
+
+[info]    Generating static pages (4/6) 
+
+[info]  ✓ Generating static pages (6/6)
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    908 B          94.7 kB
+├ ○ /_not-found                          871 B          87.8 kB
+├ ○ /login                               661 B          94.5 kB
+└ ƒ /user/[id]                           556 B          87.5 kB
++ First Load JS shared by all            86.9 kB
+  ├ chunks/23-dbb9ab398177a415.js        31.4 kB
+  ├ chunks/fd9d1056-be48aeae6e94b8d1.js  53.6 kB
+  └ other shared chunks (total)          1.89 kB
+
+
+
+[info] ○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static component /user/[id]/page
+[info]  • route with server action /login
+[info]  • route with server action /
+[info]  • route with server action /user/[id]
+[info] 
+[debug] [2024-05-13T15:59:19.545Z] skipping / due to server action
+[debug] [2024-05-13T15:59:19.545Z] skipping /login due to server action
+[debug] [2024-05-13T15:59:32.123Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites/auth-firebase-9da15 [none]
+[debug] [2024-05-13T15:59:33.316Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites/auth-firebase-9da15 200
+[debug] [2024-05-13T15:59:33.316Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites/auth-firebase-9da15 {"name":"projects/auth-firebase-9da15/sites/auth-firebase-9da15","defaultUrl":"https://auth-firebase-9da15.web.app","type":"DEFAULT_SITE"}
+[debug] [2024-05-13T15:59:33.485Z] Error: ENOENT: no such file or directory, lstat 'D:\IT\FRONT END\NEXT\auth-firebase REPO\auth-firebase\.next\D:\IT\FRONT END\NEXT\auth-firebase REPO\auth-firebase\.next\app-build-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-05-13T16:01:53.375Z] ----------------------------------------------------------------------
+[debug] [2024-05-13T16:01:53.380Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-13T16:01:53.381Z] CLI Version:   13.8.3
+[debug] [2024-05-13T16:01:53.381Z] Platform:      win32
+[debug] [2024-05-13T16:01:53.381Z] Node Version:  v20.11.1
+[debug] [2024-05-13T16:01:53.381Z] Time:          Mon May 13 2024 19:01:53 GMT+0300 (Москва, стандартное время)
+[debug] [2024-05-13T16:01:53.381Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-13T16:01:53.486Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-13T16:01:53.487Z] > authorizing via signed-in user (nero53277@gmail.com)
+[debug] [2024-05-13T16:01:53.488Z] [iam] checking project auth-firebase-9da15 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-13T16:01:53.491Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions [none]
+[debug] [2024-05-13T16:01:53.492Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions x-goog-quota-user=projects/auth-firebase-9da15
+[debug] [2024-05-13T16:01:53.492Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-13T16:01:54.438Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions 200
+[debug] [2024-05-13T16:01:54.438Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/auth-firebase-9da15:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-13T16:01:54.441Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15 [none]
+[debug] [2024-05-13T16:01:54.825Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15 200
+[debug] [2024-05-13T16:01:54.826Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15 {"projectId":"auth-firebase-9da15","projectNumber":"121909405412","displayName":"auth-firebase","name":"projects/auth-firebase-9da15","resources":{"hostingSite":"auth-firebase-9da15","realtimeDatabaseInstance":"auth-firebase-9da15-default-rtdb"},"state":"ACTIVE","etag":"1_d6fa2607-07ea-49fa-89e7-b1c653fc5b5e"}
+[debug] [2024-05-13T16:02:02.112Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites pageToken=&pageSize=10
+[debug] [2024-05-13T16:02:03.534Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites 200
+[debug] [2024-05-13T16:02:03.534Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites {"sites":[{"name":"projects/auth-firebase-9da15/sites/auth-firebase-9da15","defaultUrl":"https://auth-firebase-9da15.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-13T16:02:03.535Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites 
+[debug] [2024-05-13T16:02:04.250Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites 200
+[debug] [2024-05-13T16:02:04.251Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites {"sites":[{"name":"projects/auth-firebase-9da15/sites/auth-firebase-9da15","defaultUrl":"https://auth-firebase-9da15.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-13T16:02:04.252Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15/webApps/-/config [none]
+[debug] [2024-05-13T16:02:05.070Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15/webApps/-/config 200
+[debug] [2024-05-13T16:02:05.070Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/auth-firebase-9da15/webApps/-/config {"projectId":"auth-firebase-9da15","appId":"1:121909405412:web:d068890550cd9975196ef1","databaseURL":"https://auth-firebase-9da15-default-rtdb.firebaseio.com","storageBucket":"auth-firebase-9da15.appspot.com","apiKey":"AIzaSyCu2co0zoBv7_wWEuUzQ52T1ItJK5DpBiE","authDomain":"auth-firebase-9da15.firebaseapp.com","messagingSenderId":"121909405412"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-05-13T16:02:16.931Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites/auth-firebase-9da15 [none]
+[debug] [2024-05-13T16:02:18.072Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites/auth-firebase-9da15 200
+[debug] [2024-05-13T16:02:18.073Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/auth-firebase-9da15/sites/auth-firebase-9da15 {"name":"projects/auth-firebase-9da15/sites/auth-firebase-9da15","defaultUrl":"https://auth-firebase-9da15.web.app","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.2
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/6) ...
+
+[info]    Generating static pages (1/6) 
+
+[info]    Generating static pages (2/6) 
+
+[info]    Generating static pages (4/6) 
+
+[info]  ✓ Generating static pages (6/6)
+
+[info] 
+
+[info] > Build error occurred
+
+[info] [Error: EBUSY: resource busy or locked, rmdir 'D:\IT\FRONT END\NEXT\auth-firebase REPO\auth-firebase\.next\export'] {
+  errno: -4082,
+  code: 'EBUSY',
+  syscall: 'rmdir',
+  path: 'D:\\IT\\FRONT END\\NEXT\\auth-firebase REPO\\auth-firebase\\.next\\export'
+}
+
+[debug] [2024-05-13T16:02:36.949Z] Error: ENOENT: no such file or directory, open 'D:\IT\FRONT END\NEXT\auth-firebase REPO\auth-firebase\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.

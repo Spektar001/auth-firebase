@@ -6,6 +6,7 @@ import {
   sendEmailVerification,
 } from "firebase/auth";
 import { ref, set } from "firebase/database";
+import { redirect } from "next/navigation";
 
 export const registerUser = async (
   username: string,
@@ -30,4 +31,5 @@ export const registerUser = async (
     password: password,
     emailVerified: false,
   });
+  redirect('/login');
 };
